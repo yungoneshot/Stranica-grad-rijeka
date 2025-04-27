@@ -1,0 +1,1 @@
+Ovo je projekt za stranicu o Gradu Rijeka.

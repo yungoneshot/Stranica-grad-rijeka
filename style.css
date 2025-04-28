@@ -8,18 +8,15 @@ body {
     padding: 0.25rem;
 }
 
-p{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    
-}
 .textPovijest{
     padding: 5rem;
     font-size: 1.5rem;
 }
 .textPovijest p{
     text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -138,4 +135,73 @@ p{
     background-color: rgb(247, 247, 247);
     max-width: 35rem;
     margin: 0 auto;
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: 1.25rem;
+    max-width: 75rem;
+    margin: 2rem auto 0 auto;
+}
+
+.gallery-item2 {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.gallery-item2 img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+}
+
+.gallery-item2 p {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.gallery-item2:hover{
+    transform: scale(1.25);
+}
+
+.ztcText img{
+    width: 50%;
+    height: 35rem;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ztcText p{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.ztcText h3{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.towerText img{
+    width: 50%;
+    height: 35rem;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.towerText p{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.towerText h3{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
 }

@@ -35,5 +35,21 @@
         </nav>
     </div>
     <p>API s lokacijom plaze i api za temperaturu mora</p>
+    <script>
+        try {
+                const odgovor = await fetch('http://localhost:3000/temperatureMora');
+                if (!odgovor.ok) {
+                    throw new Error('Greška kod dohvata podataka u HTML.');
+                }
+                else {
+                    const podatci = await odgovor.json();
+                    document.getElementById('vic').innerText = `${podatci.setup} ${podatci.punchline}`;
+                }
+
+            }
+            catch (error) {
+                document.getElementById('vic').innerText = error;
+            }
+    </script>
 </body>
 </html>

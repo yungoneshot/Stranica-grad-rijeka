@@ -70,7 +70,7 @@ body {
 .navbar2{
     display: flex;
     align-items: center;
-    background-color: #272727;
+    background-color: #380101;
     padding: 0.625rem 1.25rem;
   }
 .nav-link2{
@@ -204,4 +204,12 @@ body {
     padding: 1rem;
     font-size: 1rem;
     text-align: center;
+}
+#map {
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
